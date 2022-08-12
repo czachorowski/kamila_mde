@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin:30px 50px;
+  font-size: 18pt;
+}
+
+#chart {
+  width: 100%;
+  height: 90vh;
+}
+
+.axisLabel {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14pt;
+}
+
+.axis {
+  font-size: 9pt;
+}
+
+#container {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+        "lineChart barChart";
+}
+
+.barChart {
+  grid-area: barChart;
+}
+
+.lineChart {
+  grid-area: lineChart;
+}
+
+#chart {
+  height: 80vh;
+  grid-area: chart;
+}
+
+#legend {
+  height: 200px;
+  /* margin-top: 100%; */
+  grid-area: legend;
+  margin: 0 0 0 140px;
+}
+
+/* #containerLine {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+        "chart legend";
+} */
+
+#chartLine {
+  height: 80vh;
+  grid-area: chart;
+  /* width: 100%; */
+  /* height: 90vh; */
+}
+
+#legendLine {
+  height: 200px;
+  /* margin-top: 100%; */
+  grid-area: legend;
+  margin: 0px 0px 0px 140px ;
+}
+
+div.tooltip {	
+  position: absolute;			
+  text-align: center;			
+  width: 60px;					
+  height: 28px;					
+  padding: 2px;				
+  font: 12px sans-serif;		
+  /* background: lightsteelblue;	 */
+  background: #E7B8AD;	
+  border: 0px;		
+  /* border-radius: 8px;			 */
+  pointer-events: none;			
+}
+
+.button_group {
+  margin: 10px 50px;
+}
+
+button {
+  width: 100px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 10pt;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:focus {
+  background-color: black;
+  color: white;
+  outline:0;
+}
+
+button.active {
+  background-color: black;
+  color: white;
+  outline:0;
+}
+
+
+/* #btn {
+  font-size: 14px;
+  color:blue;
+} */

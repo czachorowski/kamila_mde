@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+
+    <!-- <button id="btn">I'm a button</button> -->
+    <div id="container">
+        
+        <div class="barChart">
+            <h2>Raw Fiber Imports and Exports By Month in 2020</h2>
+            <div class="button_group">
+                <button class="tablinks active" id="Cotton" onclick="showVis(event)">Cotton</button>
+                <button class="tablinks" id="Silk" onclick="showVis(event)">Silk</button>
+                <button class="tablinks" id="Linen" onclick="showVis(event)">Linen</button>
+                <button class="tablinks" id="Synthetic" onclick="showVis(event)">Synthetic</button>
+                <button class="tablinks" id="Wool" onclick="showVis(event)">Wool</button>
+            </div>
+            <!-- <ul>
+                <li><select id="selected-feature" class="tablinks">
+                        <option id="Cotton" value="Cotton" onclick="showVis(event)" >Cotton</option>
+                        <option id="Silk "value="Silk" onclick="showVis(event)">Silk</option>
+                        <option id="Linen" value="Linen" onclick="showVis(event)">Linen</option>
+                        <option id="Synthetic" value="Synthetic" onclick="showVis(event)">Synthetic</option>
+                        <option id="Wool" value="Wool" onclick="showVis(event)">Wool</option>
+                    </select>
+                </li>
+            </ul> -->
+            <div id="chart"></div>
+            <div id="legend"></div>
+        </div>
+        
+        <div class="lineChart">
+            <h2>Fiber Imports By Month in 2020</h2>
+            <div id="chartLine"></div>
+            <div id="legendLine"></div>
+        </div>
+    </div>
+
+
+    <!-- <div class="col-2">
+                <div id="legend"></div>
+            </div> -->
+    <!-- <div class="col-2"> -->
+    <!-- <div id="legendLine"></div> -->
+    <!-- </div> -->
+
+    <!-- <div id="chart"></div> -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
